@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:background="#fffbe8"
+    android:screenOrientation="landscape">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"/>
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#34495e"
+            android:text="123"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"/>
+
+
+
+        <TextView
+            android:id="@+id/lianai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="niaho"
+            android:layout_gravity="center"
+            android:textColor="#34495e"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"/>
+
+        <TextView
+            android:id="@+id/dianliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="niaho"
+            android:textColor="#34495e"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="6dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/nextIcon"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"/>
+
+        <TextView
+            android:id="@+id/nextWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#34495e"
+            android:text="123"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+
+        <ImageView
+            android:id="@+id/wpIcon"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/wp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#34495e"
+            android:text="123"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/blIcon"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/bl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#34495e"
+            android:text="123"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="nihao"
+        android:textSize="120dp"
+        android:layout_gravity="center"
+        android:padding="14dp"
+        android:textColor="#34495e" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:text="niaho"
+            android:textColor="#34495e"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="niaho"
+            android:textColor="#34495e"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvFruits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+
+</LinearLayout>
