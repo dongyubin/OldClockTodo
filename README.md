@@ -18,3 +18,5 @@ Android 版本：5.0.2
 
 
 在`Clock/app/src/main/java/com/dyb/clock/MainActivity.java`文件中搜索`TODO：`按照提示替换指定的URL地址即可使用，不替换的话，默认显示为123
+
+[详细教程地址](https://www.wangdu.site/software/974.html)

@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageView iv_blIcon;
 
     public static final MediaType JSON1 = MediaType.parse("application/json; charset=utf-8");
+    /**
+    * TODO：恋爱时间
+    */
     private static String love_day = "2020-09-09 00:00:00";
     private static String pattern = "yyyy-MM-dd HH:mm:ss";
     TimeDiff timeDiff = new TimeDiff();
@@ -157,18 +160,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if (isCharging) {
-//                    if (usbCharge) {
-//                        Toast.makeText(MainActivity.this, "手机正处于USB连接！", Toast.LENGTH_SHORT).show();
-
-//                        textViewDianliang.setText("充电中："+((level*100)/scale)+"%");
-//                    } else if (acCharge) {
-//                        Toast.makeText(MainActivity.this, "手机通过电源充电中！", Toast.LENGTH_SHORT).show();
-                    //把它转成百分比
                     textViewDianliang.setTypeface(tf);
                     textViewDianliang.setText("⚡" + ((level * 100) / scale) + "%");
-//                    }
                 } else {
-//                    Toast.makeText(MainActivity.this, "手机未连接USB线！", Toast.LENGTH_SHORT).show();
                     textViewDianliang.setTypeface(tf);
                     textViewDianliang.setText("\uD83D\uDD0B " + ((level * 100) / scale) + "%");
                 }
@@ -210,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(batteryReceiver, intentFilter);
         refreshLove();
         /**
-         *TODO：在和风天气https://dev.qweather.com/申请key
+         * TODO：在和风天气https://dev.qweather.com/申请key
          */
         HeConfig.init("XXX", "XXX");
         HeConfig.switchToDevService();
